@@ -221,30 +221,4 @@ createApp({
 			this.reply(messages)
 		},
 	},
-	beforeCreate() {
-		console.log('BEFORE CREATE', this.contacts)
-	},
-	created() {
-		console.log('CREATED', this.contacts)
-	},
-	beforeMount() {
-		console.log('BEFORE MOUNT', this.currentIndex)
-	},
-	mounted() {
-		console.log('MOUNTED', this.currentContact)
-	},
-	beforeUpdate() {
-		console.log('BEFORE UPDATE')
-	},
-	updated() {
-		console.log('UPDATED')
-	},
-	beforeUnmount() {
-		// console.log('BEFORE UNMOUNT')
-		alert('BEFORE UNMOUNT')
-	},
-	unmounted() {
-		// console.log('UNMOUNTED')
-		alert('UNMOUNTED')
-	},
 }).mount('#app')
